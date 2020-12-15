@@ -3,8 +3,6 @@ require('http')
   .createServer((req, res) => {
     console.log(`incoming url: ${req.url} and incoming method: ${req.method}`)
     res.writeHeader(200,{'Content-Type': 'text/html'})
-    res.write('<p>Buenos dias Montevideo</p>')
-    res.write('<p>This is Saturday. Bla blah blah</p>')
     res.end('<h1> nodejs test app (ghanem & abdullah)</h1>')
   })
   .listen(port, (error)=>{
